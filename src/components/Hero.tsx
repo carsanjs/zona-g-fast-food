@@ -95,7 +95,7 @@ const Hero = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
             >
               <Image
-                src="https://png.pngtree.com/png-clipart/20231001/ourmid/pngtree-cute-cartoon-burger-for-story-png-image_10191020.png"
+                src="https://png.pngtree.com/png-clipart/20231019/original/pngtree-big-double-beef-burger-with-cheese-pickles-and-onion-ai-generated-png-image_13358719.png"
                 alt="Hamburguesa 3D"
                 className="w-56 h-56 object-contain drop-shadow-2xl transform -rotate-12"
               />
@@ -109,7 +109,7 @@ const Hero = () => {
               transition={{ duration: 0.6, delay: 0.4 }}
             >
               <Image
-                src="https://png.pngtree.com/png-clipart/20231001/ourmid/pngtree-cute-cartoon-burger-for-story-png-image_10191020.png"
+                src="https://png.pngtree.com/png-clipart/20231019/original/pngtree-big-double-beef-burger-with-cheese-pickles-and-onion-ai-generated-png-image_13358719.png"
                 alt="Tacos 3D"
                 className="w-48 h-48 object-contain drop-shadow-2xl transform rotate-12"
               />
@@ -123,7 +123,7 @@ const Hero = () => {
               transition={{ duration: 0.6, delay: 0.6 }}
             >
               <Image
-                src="https://png.pngtree.com/png-clipart/20231001/ourmid/pngtree-cute-cartoon-burger-for-story-png-image_10191020.png"
+                src="https://png.pngtree.com/png-clipart/20231019/original/pngtree-big-double-beef-burger-with-cheese-pickles-and-onion-ai-generated-png-image_13358719.png"
                 alt="Bebida 3D"
                 className="w-32 h-32 object-contain drop-shadow-xl"
               />
