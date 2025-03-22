@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import Image from "next/image";
 import {
   Sheet,
   SheetContent,
@@ -55,7 +55,7 @@ export function CartDrawer() {
                     className="flex items-center py-4 border-b"
                   >
                     <div className="h-16 w-16 bg-orange-50 rounded-md overflow-hidden mr-4 flex-shrink-0">
-                      <img
+                      <Image
                         src={item.image}
                         alt={item.name}
                         className="h-full w-full object-contain p-1"

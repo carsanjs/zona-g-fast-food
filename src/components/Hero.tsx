@@ -1,6 +1,6 @@
 "use client";
-
-import React, { useState, useEffect } from "react";
+import Image from "next/image";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 // import Link from "next/link";
 import { Button } from "@/components/ui/button";
@@ -94,7 +94,7 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <img
+              <Image
                 src="https://png.pngtree.com/png-clipart/20231001/ourmid/pngtree-cute-cartoon-burger-for-story-png-image_10191020.png"
                 alt="Hamburguesa 3D"
                 className="w-56 h-56 object-contain drop-shadow-2xl transform -rotate-12"
@@ -108,7 +108,7 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
             >
-              <img
+              <Image
                 src="https://png.pngtree.com/png-clipart/20231001/ourmid/pngtree-cute-cartoon-burger-for-story-png-image_10191020.png"
                 alt="Tacos 3D"
                 className="w-48 h-48 object-contain drop-shadow-2xl transform rotate-12"
@@ -122,7 +122,7 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.6 }}
             >
-              <img
+              <Image
                 src="https://png.pngtree.com/png-clipart/20231001/ourmid/pngtree-cute-cartoon-burger-for-story-png-image_10191020.png"
                 alt="Bebida 3D"
                 className="w-32 h-32 object-contain drop-shadow-xl"

@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { UtensilsCrossed, Clock, Truck, CreditCard } from "lucide-react";
+import { UtensilsCrossed, Clock, Truck } from "lucide-react";
 
 const FeatureCard = ({
   icon,

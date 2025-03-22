@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import {
@@ -133,7 +133,7 @@ const CTA = () => {
               <div className="space-y-4 mb-6">
                 <div className="flex items-center p-3 bg-gray-100 rounded-lg">
                   <div className="w-10 h-10 mr-3 flex items-center justify-center">
-                    <img
+                    <Image
                       src="https://img.freepik.com/vector-premium/icono-dinero-efectivo-aislado_24877-13371.jpg?w=2000"
                       alt="Efectivo"
                       className="w-8 h-8"

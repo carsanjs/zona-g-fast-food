@@ -1,6 +1,5 @@
 "use client";
-
-import React from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
@@ -123,7 +122,7 @@ const OrderPage = () => {
                 <div className="p-6 space-y-6">
                   <div className="space-y-4">
                     <div className="flex items-center p-4 border border-gray-200 rounded-lg">
-                      <img
+                      <Image
                         src="https://i.imgur.com/nNWzHfJ.png"
                         alt="Efectivo"
                         className="w-12 h-12 mr-4"
@@ -139,7 +138,7 @@ const OrderPage = () => {
                     </div>
 
                     <div className="flex items-center p-4 border border-gray-200 rounded-lg">
-                      <img
+                      <Image
                         src="https://i.imgur.com/8XCCJRe.png"
                         alt="Tarjeta"
                         className="w-12 h-12 mr-4"
@@ -155,7 +154,7 @@ const OrderPage = () => {
                     </div>
 
                     <div className="flex items-center p-4 border border-gray-200 rounded-lg">
-                      <img
+                      <Image
                         src="https://i.imgur.com/JmekYwa.png"
                         alt="Transferencia"
                         className="w-12 h-12 mr-4"

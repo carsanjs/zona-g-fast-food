@@ -1,6 +1,4 @@
 "use client";
-
-import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Utensils, Clock, Heart, Leaf } from "lucide-react";
@@ -115,14 +113,14 @@ const AboutPage = () => {
                 className="relative"
               >
                 <div className="relative h-96 rounded-xl overflow-hidden shadow-xl">
-                  <img
+                  <Image
                     src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cmVzdGF1cmFudCUyMGtpdGNoZW58ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60"
                     alt="Cocina de Sabor3D"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="absolute -bottom-6 -left-6 w-48 h-48 rounded-xl overflow-hidden shadow-xl">
-                  <img
+                  <Image
                     src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmVzdGF1cmFudHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60"
                     alt="Interior del restaurante"
                     className="w-full h-full object-cover"
@@ -207,7 +205,7 @@ const AboutPage = () => {
                 >
                   <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
                     <div className="h-64 overflow-hidden">
-                      <img
+                      <Image
                         src={member.image}
                         alt={member.name}
                         className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"

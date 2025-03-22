@@ -6,7 +6,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ChevronLeft, ChevronRight, Flame } from "lucide-react";
-import { getPopularItems, MenuItem } from "@/data/menu";
+import { getPopularItems } from "@/data/menu";
 import { useCart } from "@/hook/useCart";
 
 const FeaturedMenu = () => {
