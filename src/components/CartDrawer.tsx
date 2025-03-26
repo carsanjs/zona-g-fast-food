@@ -1,5 +1,4 @@
 "use client";
-
 import Image from "next/image";
 import {
   Sheet,
@@ -12,7 +11,7 @@ import { Button } from "@/components/ui/button";
 import { Plus, Minus, X, ShoppingCart } from "lucide-react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import { useCart } from "@/hook/useCart";
+import { useCart } from "@/app/hook/useCart";
 
 export function CartDrawer() {
   const { cart, removeFromCart, updateQuantity, subtotal, total } = useCart();
@@ -28,7 +27,7 @@ export function CartDrawer() {
         >
           <ShoppingCart className="h-5 w-5" />
           {cart.length > 0 && (
-            <span className="absolute -top-2 -right-2 w-5 h-5 rounded-full bg-[#9b2d1d] text-white text-xs flex items-center justify-center">
+            <span className="absolute -top-2 -right-2 w-5 h-5 rounded-full bg-orange-500 text-white text-xs flex items-center justify-center">
               {cart.reduce((acc, item) => acc + item.quantity, 0)}
             </span>
           )}
@@ -56,6 +55,8 @@ export function CartDrawer() {
                   >
                     <div className="h-16 w-16 bg-orange-50 rounded-md overflow-hidden mr-4 flex-shrink-0">
                       <Image
+                        width={100}
+                        height={100}
                         src={item.image}
                         alt={item.name}
                         className="h-full w-full object-contain p-1"
@@ -115,13 +116,13 @@ export function CartDrawer() {
 
               <div className="space-y-2">
                 <Button
-                  className="w-full bg-[#9b2d1d] hover:bg-[#b3301f] text-white"
+                  className="w-full bg-orange-500 hover:bg-orange-600 text-white"
                   asChild
                 >
                   <Link href="/orden">Completar Pedido</Link>
                 </Button>
                 <Button
-                  className="w-full bg-green-600 border-amber-100 text-white"
+                  className="w-full"
                   variant="outline"
                   onClick={() =>
                     window.open(
@@ -157,7 +158,7 @@ export function CartDrawer() {
               Agrega algunos deliciosos platos para comenzar tu orden
             </p>
             <Button
-              className="bg-[#9b2d1d] hover:bg-[#b3301f] text-white"
+              className="bg-orange-500 hover:bg-orange-600 text-white"
               asChild
             >
               <Link href="/menu">Ver Menú</Link>

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -26,8 +26,7 @@ const FeaturedDishes = () => {
       description:
         "Deliciosa hamburguesa con carne premium, queso derretido, lechuga fresca y nuestra salsa especial",
       price: 12.99,
-      image:
-        "https://cdn.pixabay.com/photo/2023/11/29/12/59/cheeseburger-8419552_640.png",
+      image: "https://i.imgur.com/hWa4Lfh.png",
       category: "burgers",
       rating: 4.9,
     },
@@ -37,8 +36,7 @@ const FeaturedDishes = () => {
       description:
         "Tres tacos de carne asada con cilantro, cebolla y salsa de la casa en tortillas recién hechas",
       price: 9.99,
-      image:
-        "https://static.vecteezy.com/system/resources/previews/024/108/762/original/tasty-beef-and-vegetable-taco-isolated-on-transparent-background-png.png",
+      image: "https://i.imgur.com/XQbHAVm.png",
       category: "tacos",
       rating: 4.7,
     },

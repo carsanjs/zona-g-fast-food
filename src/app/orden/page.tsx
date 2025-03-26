@@ -1,11 +1,11 @@
 "use client";
-import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ShoppingCart, ArrowRight, Phone, Clock, MapPin } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Image from "next/image";
 
 const OrderPage = () => {
   return (
@@ -123,7 +123,9 @@ const OrderPage = () => {
                   <div className="space-y-4">
                     <div className="flex items-center p-4 border border-gray-200 rounded-lg">
                       <Image
-                        src="https://i.imgur.com/nNWzHfJ.png"
+                        width={100}
+                        height={100}
+                        src="/img/efectivo.webp"
                         alt="Efectivo"
                         className="w-12 h-12 mr-4"
                       />
@@ -139,7 +141,9 @@ const OrderPage = () => {
 
                     <div className="flex items-center p-4 border border-gray-200 rounded-lg">
                       <Image
-                        src="https://i.imgur.com/8XCCJRe.png"
+                        width={100}
+                        height={100}
+                        src="/img/tarjeta-credito-logo.webp"
                         alt="Tarjeta"
                         className="w-12 h-12 mr-4"
                       />
@@ -155,7 +159,9 @@ const OrderPage = () => {
 
                     <div className="flex items-center p-4 border border-gray-200 rounded-lg">
                       <Image
-                        src="https://i.imgur.com/JmekYwa.png"
+                        width={100}
+                        height={100}
+                        src="/img/tranfers.webp"
                         alt="Transferencia"
                         className="w-12 h-12 mr-4"
                       />

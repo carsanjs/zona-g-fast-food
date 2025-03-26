@@ -1,6 +1,4 @@
 "use client";
-
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import {
@@ -10,10 +8,10 @@ import {
   ChevronRight,
 } from "lucide-react";
 import Link from "next/link";
-
+import Image from "next/image";
 const CTA = () => {
   return (
-    <section className="py-20 bg-gradient-to-br from-[#561819] to-red-400 text-white relative overflow-hidden">
+    <section className="py-20 bg-gradient-to-br from-orange-600 to-orange-400 text-white relative overflow-hidden">
       {/* Animated Circles */}
       <motion.div
         className="absolute top-20 right-20 w-64 h-64 rounded-full bg-orange-300 opacity-20"
@@ -80,19 +78,19 @@ const CTA = () => {
                 <h4 className="font-medium mb-2">Cómo ordenar:</h4>
                 <ol className="space-y-2 text-gray-700">
                   <li className="flex items-center">
-                    <span className="flex items-center justify-center w-6 h-6 bg-[#b3301f] text-white rounded-full mr-2 text-xs">
+                    <span className="flex items-center justify-center w-6 h-6 bg-orange-500 text-white rounded-full mr-2 text-xs">
                       1
                     </span>
                     Envía un mensaje con tus platos
                   </li>
                   <li className="flex items-center">
-                    <span className="flex items-center justify-center w-6 h-6 bg-[#b3301f] text-white rounded-full mr-2 text-xs">
+                    <span className="flex items-center justify-center w-6 h-6 bg-orange-500 text-white rounded-full mr-2 text-xs">
                       2
                     </span>
                     Confirma tu dirección
                   </li>
                   <li className="flex items-center">
-                    <span className="flex items-center justify-center w-6 h-6 bg-[#b3301f] text-white rounded-full mr-2 text-xs">
+                    <span className="flex items-center justify-center w-6 h-6 bg-orange-500 text-white rounded-full mr-2 text-xs">
                       3
                     </span>
                     Elige método de pago
@@ -134,7 +132,9 @@ const CTA = () => {
                 <div className="flex items-center p-3 bg-gray-100 rounded-lg">
                   <div className="w-10 h-10 mr-3 flex items-center justify-center">
                     <Image
-                      src="https://img.freepik.com/vector-premium/icono-dinero-efectivo-aislado_24877-13371.jpg?w=2000"
+                      width={100}
+                      height={100}
+                      src="/img/efectivo.webp"
                       alt="Efectivo"
                       className="w-8 h-8"
                     />
@@ -147,10 +147,44 @@ const CTA = () => {
                   </div>
                   <ChevronRight className="h-5 w-5 text-gray-400" />
                 </div>
+                {/* <div className="flex items-center p-3 bg-gray-100 rounded-lg">
+                  <div className="w-10 h-10 mr-3 flex items-center justify-center">
+                    <Image
+                      src=""
+                      alt="Tarjeta"
+                      className="w-8 h-8"
+                    />
+                  </div>
+                  <div className="flex-1">
+                    <h4 className="font-medium">Tarjeta de Crédito/Débito</h4>
+                    <p className="text-sm text-gray-500">
+                      Pago seguro en línea
+                    </p>
+                  </div>
+                  <ChevronRight className="h-5 w-5 text-gray-400" />
+                </div> */}
+                <div className="flex items-center p-3 bg-gray-100 rounded-lg">
+                  <div className="w-10 h-10 mr-3 flex items-center justify-center">
+                    <Image
+                      width={100}
+                      height={100}
+                      src="/img/tranfers.webp"
+                      alt="Transferencia"
+                      className="w-8 h-8"
+                    />
+                  </div>
+                  <div className="flex-1">
+                    <h4 className="font-medium">Transferencia Bancaria</h4>
+                    <p className="text-sm text-gray-500">
+                      Transferencia rápida
+                    </p>
+                  </div>
+                  <ChevronRight className="h-5 w-5 text-gray-400" />
+                </div>
               </div>
               <Button
                 size="lg"
-                className="bg-[#b3301f] hover:bg-[#9b2d1d] text-white mt-auto"
+                className="bg-orange-500 hover:bg-orange-600 text-white mt-auto"
                 asChild
               >
                 <Link href="/orden">

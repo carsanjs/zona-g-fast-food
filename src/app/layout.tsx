@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("http://zonagfastfood.com"),
+  metadataBase: new URL("https://sabor3d.same-app.com"),
   title: "Sabor 3D | Comida Deliciosa con Estilo",
   description:
     "Disfruta de la mejor comida callejera y de restaurante con un toque moderno y diseño 3D. Realiza pedidos por WhatsApp y paga en línea.",

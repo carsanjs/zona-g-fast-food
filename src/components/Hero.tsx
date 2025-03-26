@@ -1,10 +1,10 @@
 "use client";
-import Image from "next/image";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 // import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 const Hero = () => {
   const router = useRouter();
@@ -59,17 +59,18 @@ const Hero = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-5xl md:text-6xl font-bold text-[#745434] mb-6">
-              Sabores que <span className="text-[#eb8e23]">Cobran Vida</span>
+            <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
+              Sabores que <span className="text-orange-500">Cobran Vida</span>
             </h1>
-            <p className="text-xl text-[#916f50] mb-8">
+            <p className="text-xl text-gray-600 mb-8">
               Descubre nuestra increíble selección de comida callejera y de
-              restaurante con un toque moderno, deleitarán todos tus sentidos.
+              restaurante con un toque moderno y presentaciones en 3D que
+              deleitarán todos tus sentidos.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
                 size="lg"
-                className="bg-[#9b2d1d] hover:bg-[#b3301f] text-white"
+                className="bg-orange-500 hover:bg-orange-600 text-white"
                 onClick={() => router.push("/menu")}
               >
                 Ver Menú
@@ -77,7 +78,7 @@ const Hero = () => {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-[#b3301f] text-[#9b2d1d] hover:bg-orange-50"
+                className="border-orange-500 text-orange-500 hover:bg-orange-50"
                 onClick={() => router.push("/orden")}
               >
                 Ordenar Ahora
@@ -95,7 +96,9 @@ const Hero = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
             >
               <Image
-                src="https://png.pngtree.com/png-clipart/20231019/original/pngtree-big-double-beef-burger-with-cheese-pickles-and-onion-ai-generated-png-image_13358719.png"
+                width={200}
+                height={200}
+                src="/img/hb5-3dpng.webp"
                 alt="Hamburguesa 3D"
                 className="w-56 h-56 object-contain drop-shadow-2xl transform -rotate-12"
               />
@@ -109,7 +112,9 @@ const Hero = () => {
               transition={{ duration: 0.6, delay: 0.4 }}
             >
               <Image
-                src="https://png.pngtree.com/png-clipart/20231019/original/pngtree-big-double-beef-burger-with-cheese-pickles-and-onion-ai-generated-png-image_13358719.png"
+                width={200}
+                height={200}
+                src="/img/pizza3d.webp"
                 alt="Tacos 3D"
                 className="w-48 h-48 object-contain drop-shadow-2xl transform rotate-12"
               />
@@ -123,7 +128,9 @@ const Hero = () => {
               transition={{ duration: 0.6, delay: 0.6 }}
             >
               <Image
-                src="https://png.pngtree.com/png-clipart/20231019/original/pngtree-big-double-beef-burger-with-cheese-pickles-and-onion-ai-generated-png-image_13358719.png"
+                width={200}
+                height={200}
+                src="/img/tacos3d.webp"
                 alt="Bebida 3D"
                 className="w-32 h-32 object-contain drop-shadow-xl"
               />
@@ -134,7 +141,7 @@ const Hero = () => {
 
       {/* Animated Blob Background */}
       <motion.div
-        className="absolute top-1/3 -right-64 w-[600px] h-[600px] rounded-full bg-[#9b2d1d] opacity-30 blur-3xl"
+        className="absolute top-1/3 -right-64 w-[600px] h-[600px] rounded-full bg-orange-200 opacity-30 blur-3xl"
         animate={{
           x: [0, 30, 0],
           y: [0, -30, 0],
@@ -147,7 +154,7 @@ const Hero = () => {
       />
 
       <motion.div
-        className="absolute -bottom-32 -left-32 w-[500px] h-[500px] rounded-full bg-[#eb8e23] opacity-30 blur-3xl"
+        className="absolute -bottom-32 -left-32 w-[500px] h-[500px] rounded-full bg-yellow-200 opacity-30 blur-3xl"
         animate={{
           x: [0, -30, 0],
           y: [0, 30, 0],

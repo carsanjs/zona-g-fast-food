@@ -1,4 +1,5 @@
 "use client";
+
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Utensils, Clock, Heart, Leaf } from "lucide-react";
@@ -35,23 +36,23 @@ const AboutPage = () => {
 
   const team = [
     {
-      name: "Alvaro Saldaña",
+      name: "Carlos Rodríguez",
       position: "Chef Principal",
-      image: "https://i.pravatar.cc/300?img=60",
+      image: "/img/avatar1.webp",
       description:
         "Con más de 15 años de experiencia en cocina internacional y especialista en fusión de sabores.",
     },
-    // {
-    //   name: "María González",
-    //   position: "Gerente",
-    //   image: "https://i.pravatar.cc/300?img=32",
-    //   description:
-    //     "Apasionada por ofrecer la mejor experiencia a nuestros clientes y experta en gestión de restaurantes.",
-    // },
     {
-      name: "Checo Creisy",
-      position: "Chef Auxiliar",
-      image: "https://i.pravatar.cc/300?img=67",
+      name: "María González",
+      position: "Gerente",
+      image: "/img/avatar2.webp",
+      description:
+        "Apasionada por ofrecer la mejor experiencia a nuestros clientes y experta en gestión de restaurantes.",
+    },
+    {
+      name: "Juan Méndez",
+      position: "Chef de Postres",
+      image: "/img/avatar3.webp",
       description:
         "Maestro pastelero con creaciones únicas que combinan técnicas tradicionales con presentaciones modernas.",
     },
@@ -70,10 +71,10 @@ const AboutPage = () => {
               transition={{ duration: 0.7 }}
               className="text-center mb-16"
             >
-              <h1 className="text-4xl md:text-5xl font-bold text-[#5a3d26] mb-6">
-                Nuestra <span className="text-[#eb8e23]">Historia</span>
+              <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                Nuestra <span className="text-orange-500">Historia</span>
               </h1>
-              <p className="text-xl text-[#745434] max-w-3xl mx-auto">
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                 Descubre quiénes somos y la pasión que nos impulsa a crear
                 experiencias gastronómicas únicas con un toque moderno.
               </p>
@@ -85,24 +86,25 @@ const AboutPage = () => {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.7 }}
               >
-                <h2 className="text-3xl font-bold text-[#5a3d26] mb-6">
+                <h2 className="text-3xl font-bold text-gray-900 mb-6">
                   De un sueño a la realidad
                 </h2>
-                <p className="text-[#745434] mb-4">
-                  Zona G Fast Food nació en 2023 como un pequeño puesto de
-                  comida callejera con una visión innovadora: combinar sabores
-                  tradicionales.
+                <p className="text-gray-600 mb-4">
+                  Sabor3D nació en 2020 como un pequeño puesto de comida
+                  callejera con una visión innovadora: combinar sabores
+                  tradicionales con presentaciones modernas y experiencias
+                  visuales en 3D.
                 </p>
-                <p className="text-[#745434] mb-4">
+                <p className="text-gray-600 mb-4">
                   Nuestros fundadores, apasionados por la gastronomía y la
                   tecnología, decidieron crear un concepto único que
                   revolucionaría la forma de disfrutar la comida callejera,
                   elevándola a un nivel gourmet sin perder su esencia.
                 </p>
-                <p className="text-[#745434]">
-                  Hoy, Zona G Fast Food se ha convertido en un referente
-                  gastronómico, manteniendo nuestro compromiso con la calidad,
-                  la innovación y la experiencia única para nuestros clientes.
+                <p className="text-gray-600">
+                  Hoy, Sabor3D se ha convertido en un referente gastronómico,
+                  manteniendo nuestro compromiso con la calidad, la innovación y
+                  la experiencia única para nuestros clientes.
                 </p>
               </motion.div>
 
@@ -114,14 +116,18 @@ const AboutPage = () => {
               >
                 <div className="relative h-96 rounded-xl overflow-hidden shadow-xl">
                   <Image
-                    src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cmVzdGF1cmFudCUyMGtpdGNoZW58ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60"
+                    width={600}
+                    height={400}
+                    src="/img/cocina1.avif"
                     alt="Cocina de Sabor3D"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="absolute -bottom-6 -left-6 w-48 h-48 rounded-xl overflow-hidden shadow-xl">
                   <Image
-                    src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmVzdGF1cmFudHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60"
+                    width={500}
+                    height={300}
+                    src="/img/cocina2.avif"
                     alt="Interior del restaurante"
                     className="w-full h-full object-cover"
                   />
@@ -141,10 +147,10 @@ const AboutPage = () => {
               viewport={{ once: true }}
               className="text-center mb-16"
             >
-              <h2 className="text-3xl md:text-4xl font-bold text-[#5a3d26] mb-6">
-                Nuestros <span className="text-[#eb8e23]">Valores</span>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                Nuestros <span className="text-orange-500">Valores</span>
               </h2>
-              <p className="text-xl text-[#745434] max-w-3xl mx-auto">
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                 Estos son los principios que guían nuestro trabajo diario y nos
                 ayudan a ofrecer la mejor experiencia.
               </p>
@@ -160,13 +166,13 @@ const AboutPage = () => {
                   viewport={{ once: true }}
                   className="flex flex-col items-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow border border-orange-100"
                 >
-                  <div className="p-3 bg-orange-100 rounded-full text-[#eb8e23] mb-4">
+                  <div className="p-3 bg-orange-100 rounded-full text-orange-500 mb-4">
                     {value.icon}
                   </div>
-                  <h3 className="text-xl font-semibold text-[#5a3d26] mb-2">
+                  <h3 className="text-xl font-semibold text-gray-800 mb-2">
                     {value.title}
                   </h3>
-                  <p className="text-[#745434] text-center">
+                  <p className="text-gray-600 text-center">
                     {value.description}
                   </p>
                 </motion.div>
@@ -186,7 +192,7 @@ const AboutPage = () => {
               className="text-center mb-16"
             >
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                Nuestro <span className="text-[#eb8e23]">Equipo</span>
+                Nuestro <span className="text-orange-500">Equipo</span>
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                 Conoce a las personas que hacen posible que disfrutemos de
@@ -194,7 +200,7 @@ const AboutPage = () => {
               </p>
             </motion.div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
               {team.map((member, index) => (
                 <motion.div
                   key={index}
@@ -206,6 +212,8 @@ const AboutPage = () => {
                   <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
                     <div className="h-64 overflow-hidden">
                       <Image
+                        width={150}
+                        height={150}
                         src={member.image}
                         alt={member.name}
                         className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
@@ -215,7 +223,7 @@ const AboutPage = () => {
                       <h3 className="text-xl font-bold text-gray-900 mb-1">
                         {member.name}
                       </h3>
-                      <p className="text-[#eb8e23] font-medium mb-4">
+                      <p className="text-orange-500 font-medium mb-4">
                         {member.position}
                       </p>
                       <p className="text-gray-600">{member.description}</p>
@@ -243,8 +251,8 @@ const AboutPage = () => {
                 </h2>
                 <p className="text-gray-600 mb-4">
                   Ofrecer una experiencia gastronómica única que combina sabores
-                  tradicionales, utilizando ingredientes frescos y de la mejor
-                  calidad.
+                  tradicionales con presentaciones modernas en 3D, utilizando
+                  ingredientes frescos y de la mejor calidad.
                 </p>
                 <p className="text-gray-600">
                   Buscamos crear momentos memorables a través de la comida,

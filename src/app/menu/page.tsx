@@ -9,7 +9,7 @@ import { Input } from "@/components/ui/input";
 import { Search, Flame, Leaf, Wheat } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { useCart } from "../../hook/useCart";
+import { useCart } from "../hook/useCart";
 
 const MenuPage = () => {
   const { addToCart } = useCart();
@@ -91,12 +91,12 @@ const MenuPage = () => {
             transition={{ duration: 0.7 }}
             className="text-center mb-14"
           >
-            <h1 className="text-4xl md:text-5xl font-bold text-[#5a3d26] mb-6">
-              Nuestro <span className="text-[#eb8e23]">Menú</span>
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              Nuestro <span className="text-orange-500">Menú</span>
             </h1>
-            <p className="text-xl text-[#745434] max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Explora nuestro amplio menú de deliciosas opciones, desde
-              hamburguesas y perros hasta salchipapas.
+              hamburguesas y tacos hasta ensaladas y postres.
             </p>
           </motion.div>
 
@@ -147,8 +147,8 @@ const MenuPage = () => {
                   variant={activeFilters.glutenFree ? "default" : "outline"}
                   className={
                     activeFilters.glutenFree
-                      ? "bg-[#9b2d1d] hover:bg-[#b3301f]"
-                      : "border-[#b3301f] text-[#b3301f] hover:bg-amber-50"
+                      ? "bg-amber-500 hover:bg-amber-600"
+                      : "border-amber-500 text-amber-500 hover:bg-amber-50"
                   }
                   onClick={() => handleFilterChange("glutenFree")}
                 >
@@ -163,8 +163,8 @@ const MenuPage = () => {
                 variant={selectedCategory === "all" ? "default" : "outline"}
                 className={
                   selectedCategory === "all"
-                    ? "bg-[#9b2d1d] hover:bg-[#b3301f] text-white"
-                    : "border-[#b3301f] text-[#b3301f] hover:bg-orange-50"
+                    ? "bg-orange-500 hover:bg-orange-600"
+                    : "border-orange-300 text-orange-600 hover:bg-orange-50"
                 }
                 onClick={() => setSelectedCategory("all")}
               >
@@ -178,8 +178,8 @@ const MenuPage = () => {
                   }
                   className={
                     selectedCategory === category.id
-                      ? "bg-[#9b2d1d] hover:bg-[#b3301f] text-white"
-                      : "border-[#b3301f] text-[#b3301f] hover:bg-orange-50"
+                      ? "bg-orange-500 hover:bg-orange-600"
+                      : "border-orange-300 text-orange-600 hover:bg-orange-50"
                   }
                   onClick={() => setSelectedCategory(category.id)}
                 >
@@ -241,7 +241,7 @@ const MenuPage = () => {
                     <CardContent className="p-6">
                       <div className="flex justify-between items-start mb-3">
                         <div className="flex items-center">
-                          <h3 className="text-xl font-bold text-[#5a3d26]">
+                          <h3 className="text-xl font-bold text-gray-800">
                             {item.name}
                           </h3>
                           {renderSpicyIndicator(item.spicy)}
@@ -250,10 +250,10 @@ const MenuPage = () => {
                           ${item.price.toFixed(2)}
                         </span>
                       </div>
-                      <p className="text-[#745434] mb-4">{item.description}</p>
+                      <p className="text-gray-600 mb-4">{item.description}</p>
                       <Button
                         variant="outline"
-                        className="w-full border-[#9b2d1d] text-[#b3301f] hover:bg-orange-50 mt-2"
+                        className="w-full border-orange-500 text-orange-500 hover:bg-orange-50 mt-2"
                         onClick={() => addToCart(item)}
                       >
                         Agregar al Carrito

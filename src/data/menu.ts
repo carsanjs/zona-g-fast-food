@@ -66,8 +66,7 @@ export const menuItems: MenuItem[] = [
     description:
       "Deliciosa hamburguesa con doble carne, queso cheddar, tocino, lechuga, tomate y nuestra salsa especial.",
     price: 9.99,
-    image:
-      "https://static.vecteezy.com/system/resources/previews/047/301/036/non_2x/a-close-up-of-a-classic-burger-png.png",
+    image: "/img/hb1.webp",
     category: "Hamburguesas",
     popular: true,
     spicy: 1,
@@ -78,8 +77,7 @@ export const menuItems: MenuItem[] = [
     description:
       "Hamburguesa con medallón de lentejas, queso, lechuga, tomate, cebolla caramelizada y salsa de aguacate.",
     price: 8.99,
-    image:
-      "https://static.vecteezy.com/system/resources/previews/047/300/996/non_2x/a-close-up-of-a-classic-burger-png.png",
+    image: "/img/hb2.webp",
     category: "Hamburguesas",
     vegetarian: true,
     vegan: false,
@@ -91,8 +89,7 @@ export const menuItems: MenuItem[] = [
     description:
       "Hamburguesa con carne a la parrilla, queso, cebolla crujiente, tocino y salsa BBQ.",
     price: 10.5,
-    image:
-      "https://png.pngtree.com/png-clipart/20231019/original/pngtree-big-double-beef-burger-with-cheese-pickles-and-onion-ai-generated-png-image_13358719.png",
+    image: "/img/hb3.webp",
     category: "Hamburguesas",
     popular: true,
   },
@@ -102,37 +99,34 @@ export const menuItems: MenuItem[] = [
     description:
       "Tres tacos con carne marinada, cebolla, cilantro y salsa picante casera.",
     price: 8.5,
-    image:
-      "https://static.vecteezy.com/system/resources/previews/024/108/762/original/tasty-beef-and-vegetable-taco-isolated-on-transparent-background-png.png",
+    image: "/img/taco1.webp",
     category: "Tacos",
     popular: true,
     spicy: 2,
   },
-  // {
-  //   id: 5,
-  //   name: "Tacos Vegetarianos",
-  //   description:
-  //     "Tres tacos con hongos, elote, frijoles, guacamole y queso fresco.",
-  //   price: 7.99,
-  //   image:
-  //     "https://d25rq8gxcq0p71.cloudfront.net/dictionary-images/600/taco.jpg",
-  //   category: "Tacos",
-  //   vegetarian: true,
-  //   vegan: false,
-  //   spicy: 1,
-  // },
-  // {
-  //   id: 6,
-  //   name: "Tacos de Pescado",
-  //   description:
-  //     "Tres tacos con pescado rebozado, repollo morado, salsa de chipotle y limón.",
-  //   price: 9.5,
-  //   image:
-  //     "https://d25rq8gxcq0p71.cloudfront.net/dictionary-images/600/taco.jpg",
-  //   category: "Tacos",
-  //   glutenFree: false,
-  //   spicy: 1,
-  // },
+  {
+    id: 5,
+    name: "Tacos Vegetarianos",
+    description:
+      "Tres tacos con hongos, elote, frijoles, guacamole y queso fresco.",
+    price: 7.99,
+    image: "/img/tacos2.webp",
+    category: "Tacos",
+    vegetarian: true,
+    vegan: false,
+    spicy: 1,
+  },
+  {
+    id: 6,
+    name: "Tacos de Pescado",
+    description:
+      "Tres tacos con pescado rebozado, repollo morado, salsa de chipotle y limón.",
+    price: 9.5,
+    image: "/img/tacos3.webp",
+    category: "Tacos",
+    glutenFree: false,
+    spicy: 1,
+  },
   // {
   //   id: 7,
   //   name: "Malteada Premium",
@@ -176,7 +170,7 @@ export const menuItems: MenuItem[] = [
     description:
       "Pizza artesanal con masa fermentada 48 horas, mozzarella fresca, tomate y albahaca.",
     price: 12.99,
-    image: "https://pngimg.com/uploads/pizza/pizza_PNG43993.png",
+    image: "/img/pizza1.webp",
     category: "Pizzas",
     popular: true,
     vegetarian: true,
@@ -187,7 +181,7 @@ export const menuItems: MenuItem[] = [
     description:
       "Pizza con salami, jamón, tocino, carne molida y queso mozzarella.",
     price: 14.5,
-    image: "https://pngimg.com/uploads/pizza/pizza_PNG43993.png",
+    image: "/img/pizza2.webp",
     category: "Pizzas",
   },
   {
@@ -196,7 +190,7 @@ export const menuItems: MenuItem[] = [
     description:
       "Pizza con queso vegano, pimientos, champiñones, cebolla y aceitunas.",
     price: 13.99,
-    image: "https://pngimg.com/uploads/pizza/pizza_PNG43993.png",
+    image: "/img/pizza3.webp",
     category: "Pizzas",
     vegetarian: true,
     vegan: true,
@@ -207,8 +201,7 @@ export const menuItems: MenuItem[] = [
     description:
       "Burrito grande con arroz, frijoles, guacamole, crema agria y tu elección de proteína.",
     price: 10.5,
-    image:
-      "https://static.vecteezy.com/system/resources/previews/026/772/545/original/burritos-with-ai-generated-free-png.png",
+    image: "/img/brito1.webp",
     category: "Burritos",
     popular: true,
     spicy: 2,
@@ -219,8 +212,7 @@ export const menuItems: MenuItem[] = [
     description:
       "Burrito con arroz, frijoles, pimientos, calabacín, maíz y aguacate.",
     price: 9.5,
-    image:
-      "https://static.vecteezy.com/system/resources/previews/026/772/545/original/burritos-with-ai-generated-free-png.png",
+    image: "/img/brito2.webp",
     category: "Burritos",
     vegetarian: true,
     vegan: true,
@@ -232,8 +224,7 @@ export const menuItems: MenuItem[] = [
     description:
       "Burrito con pollo a la parrilla, arroz, frijoles, queso y pico de gallo.",
     price: 10.99,
-    image:
-      "https://static.vecteezy.com/system/resources/previews/026/772/545/original/burritos-with-ai-generated-free-png.png",
+    image: "/img/brito3.webp",
     category: "Burritos",
     spicy: 1,
   },
@@ -243,8 +234,7 @@ export const menuItems: MenuItem[] = [
     description:
       "Fresca ensalada con lechuga romana, crutones, aderezo césar y pollo a la parrilla.",
     price: 8.99,
-    image:
-      "https://png.pngtree.com/png-clipart/20230928/original/pngtree-salad-with-vegetables-png-image_13008916.png",
+    image: "/img/enslda1.webp",
     category: "Ensaladas",
   },
   {
@@ -253,8 +243,7 @@ export const menuItems: MenuItem[] = [
     description:
       "Ensalada con lechuga, tomate, pepino, aceitunas, queso feta y aderezo de limón.",
     price: 8.5,
-    image:
-      "https://png.pngtree.com/png-clipart/20230928/original/pngtree-salad-with-vegetables-png-image_13008916.png",
+    image: "/img/enslda2.webp",
     category: "Ensaladas",
     vegetarian: true,
     glutenFree: true,
@@ -265,8 +254,7 @@ export const menuItems: MenuItem[] = [
     description:
       "Ensalada nutritiva con quinoa, aguacate, tomate, pepino y aderezo de hierbas.",
     price: 9.99,
-    image:
-      "https://png.pngtree.com/png-clipart/20230928/original/pngtree-salad-with-vegetables-png-image_13008916.png",
+    image: "/img/ensalada1.webp",
     category: "Ensaladas",
     vegetarian: true,
     vegan: true,
@@ -277,8 +265,7 @@ export const menuItems: MenuItem[] = [
     name: "Cheesecake",
     description: "Cremoso cheesecake con mermelada de frutos rojos casera.",
     price: 6.5,
-    image:
-      "https://static.vecteezy.com/system/resources/previews/025/065/317/non_2x/cheesecake-with-ai-generated-free-png.png",
+    image: "/img/postr3.webp",
     category: "Postres",
     vegetarian: true,
   },
@@ -288,8 +275,7 @@ export const menuItems: MenuItem[] = [
     description:
       "Caliente brownie de chocolate con helado de vainilla y salsa de chocolate.",
     price: 7.5,
-    image:
-      "https://png.pngtree.com/png-clipart/20231016/original/pngtree-chocolate-brownie-png-png-image_13321549.png",
+    image: "/img/postr2.webp",
     category: "Postres",
     popular: true,
     vegetarian: true,
@@ -299,8 +285,7 @@ export const menuItems: MenuItem[] = [
     name: "Flan Casero",
     description: "Suave y delicioso flan casero con caramelo.",
     price: 5.99,
-    image:
-      "https://static.vecteezy.com/system/resources/previews/025/064/843/large_2x/cheesecake-with-ai-generated-free-png.png",
+    image: "/img/potr1.webp",
     category: "Postres",
     vegetarian: true,
     glutenFree: true,

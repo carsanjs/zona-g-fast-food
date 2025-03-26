@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { UtensilsCrossed, Clock, Truck } from "lucide-react";
+import { UtensilsCrossed, Clock, Truck, CreditCard } from "lucide-react";
 
 const FeatureCard = ({
   icon,
@@ -54,13 +54,13 @@ const Features = () => {
         "Llevamos nuestros deliciosos platillos directamente a la puerta de tu casa.",
       delay: 0.3,
     },
-    // {
-    //   icon: <CreditCard size={24} />,
-    //   title: "Pago Fácil",
-    //   description:
-    //     "Múltiples opciones de pago para que elijas la que más te convenga.",
-    //   delay: 0.4,
-    // },
+    {
+      icon: <CreditCard size={24} />,
+      title: "Pago Fácil",
+      description:
+        "Múltiples opciones de pago para que elijas la que más te convenga.",
+      delay: 0.4,
+    },
   ];
 
   return (
@@ -73,16 +73,16 @@ const Features = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-[#5a3d26] mb-4">
-            Por qué elegir <span className="text-[#eb8e23]">Zona G</span>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            Por qué elegir <span className="text-orange-500">Sabor 3D</span>
           </h2>
-          <p className="text-xl text-[#916f50] max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Ofrecemos una experiencia culinaria única, combinando sabores
-            tradicionales.
+            tradicionales con presentaciones modernas en 3D.
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature, index) => (
             <FeatureCard
               key={index}

@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ChevronLeft, ChevronRight, Flame } from "lucide-react";
 import { getPopularItems } from "@/data/menu";
-import { useCart } from "@/hook/useCart";
+import { useCart } from "@/app/hook/useCart";
 
 const FeaturedMenu = () => {
   const menuItems = getPopularItems();
@@ -56,10 +56,10 @@ const FeaturedMenu = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-[#5a3d26] mb-4">
-            Nuestros Platos <span className="text-[#eb8e23]">Destacados</span>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            Nuestros Platos <span className="text-orange-500">Destacados</span>
           </h2>
-          <p className="text-xl text-[#916f50] max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Explora nuestra selección de los platos más populares, preparados
             con ingredientes frescos y técnicas únicas.
           </p>
@@ -69,7 +69,7 @@ const FeaturedMenu = () => {
           <Button
             variant="outline"
             size="icon"
-            className="mr-4 text-[#9b2d1d] border-[#b3301f] hover:bg-orange-100"
+            className="mr-4 text-orange-500 border-orange-300 hover:bg-orange-100"
             onClick={prevSlide}
           >
             <ChevronLeft />
@@ -79,7 +79,7 @@ const FeaturedMenu = () => {
               <div
                 key={index}
                 className={`w-3 h-3 rounded-full cursor-pointer transition-colors ${
-                  index === activeIndex ? "bg-[#b3301f]" : "bg-orange-200"
+                  index === activeIndex ? "bg-orange-500" : "bg-orange-200"
                 }`}
                 onClick={() => setActiveIndex(index)}
               />
@@ -88,7 +88,7 @@ const FeaturedMenu = () => {
           <Button
             variant="outline"
             size="icon"
-            className="ml-4 text-[#9b2d1d] border-[#b3301f] hover:bg-orange-100"
+            className="ml-4 text-orange-500 border-orange-300 hover:bg-orange-100"
             onClick={nextSlide}
           >
             <ChevronRight />
@@ -142,7 +142,7 @@ const FeaturedMenu = () => {
                   </p>
                   <Button
                     variant="outline"
-                    className="w-full text-[#9b2d1d] border-[#b3301f] hover:bg-orange-50 mt-2"
+                    className="w-full border-orange-500 text-orange-500 hover:bg-orange-50 mt-2"
                     onClick={() => addToCart(item)}
                   >
                     Agregar al Carrito
@@ -156,7 +156,7 @@ const FeaturedMenu = () => {
         <div className="text-center mt-12">
           <Button
             size="lg"
-            className="bg-[#9b2d1d] hover:bg-[#b3301f] text-white"
+            className="bg-orange-500 hover:bg-orange-600 text-white"
             asChild
           >
             <Link href="/menu">Ver Menú Completo</Link>

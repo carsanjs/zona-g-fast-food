@@ -18,15 +18,15 @@ const Footer = () => {
           {/* About */}
           <div>
             <h3 className="text-2xl font-bold text-white mb-4">
-              Zona<span className="text-[#eb8e23]"> G Fast Food</span>
+              Sabor<span className="text-orange-500">3D</span>
             </h3>
             <p className="mb-4">
               Ofrecemos la mejor experiencia gastronómica con comida callejera y
-              de restaurante.
+              de restaurante con un toque moderno y presentaciones en 3D.
             </p>
             <div className="flex space-x-4">
               <a
-                href=""
+                href="https://instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-orange-500 transition-colors"
@@ -34,7 +34,7 @@ const Footer = () => {
                 <Instagram size={20} />
               </a>
               <a
-                href="https://www.facebook.com/profile.php?id=61550760083012"
+                href="https://facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-orange-500 transition-colors"
@@ -42,7 +42,7 @@ const Footer = () => {
                 <Facebook size={20} />
               </a>
               <a
-                href=""
+                href="https://twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-orange-500 transition-colors"
@@ -109,17 +109,17 @@ const Footer = () => {
             <ul className="space-y-2">
               <li className="flex justify-between">
                 <span>Lunes - Viernes</span>
-                <span>7:00 - 11:00</span>
+                <span>11:00 - 22:00</span>
               </li>
               <li className="flex justify-between">
                 <span>Sábados</span>
-                <span>6:00 - 12:00</span>
+                <span>12:00 - 23:00</span>
               </li>
               <li className="flex justify-between">
                 <span>Domingos</span>
-                <span>6:00 - 11:00</span>
+                <span>12:00 - 21:00</span>
               </li>
-              <li className="mt-4 text-[#eb8e23] font-medium">
+              <li className="mt-4 text-orange-500 font-medium">
                 Servicio a domicilio disponible
               </li>
             </ul>
@@ -134,23 +134,26 @@ const Footer = () => {
               <li className="flex items-start">
                 <MapPin
                   size={18}
-                  className="mr-2 text-[#eb8e23] flex-shrink-0 mt-1"
+                  className="mr-2 text-orange-500 flex-shrink-0 mt-1"
                 />
                 <span>
-                  Carrera 14 #5-12, al lado del banco de Bogota. Aguachica -
-                  Cesar
+                  Av. Insurgentes Sur 123, Col. Roma, Ciudad de Colombia, CP
+                  201050
                 </span>
               </li>
               <li className="flex items-center">
                 <Phone
                   size={18}
-                  className="mr-2 text-[#eb8e23] flex-shrink-0"
+                  className="mr-2 text-orange-500 flex-shrink-0"
                 />
                 <span>+52 55 1234 5678</span>
               </li>
               <li className="flex items-center">
-                <Mail size={18} className="mr-2 text-[#eb8e23] flex-shrink-0" />
-                <span>zonaGfastfood@gmai.com</span>
+                <Mail
+                  size={18}
+                  className="mr-2 text-orange-500 flex-shrink-0"
+                />
+                <span>info@sabor3d.com</span>
               </li>
             </ul>
           </div>
@@ -158,20 +161,14 @@ const Footer = () => {
 
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm mb-4 md:mb-0">
-            &copy; {new Date().getFullYear()} Zona G. Todos los derechos
+            &copy; {new Date().getFullYear()} Sabor3D. Todos los derechos
             reservados.
           </p>
           <div className="flex gap-4 text-sm">
-            <Link
-              href="/politica-privacidad"
-              className="hover:text-orange-500 transition-colors"
-            >
+            <Link href="" className="hover:text-orange-500 transition-colors">
               Política de Privacidad
             </Link>
-            <Link
-              href="/terminos-condiciones"
-              className="hover:text-orange-500 transition-colors"
-            >
+            <Link href="" className="hover:text-orange-500 transition-colors">
               Términos y Condiciones
             </Link>
           </div>

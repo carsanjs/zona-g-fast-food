@@ -29,6 +29,7 @@ const Navbar = () => {
     { name: "Inicio", href: "/" },
     { name: "Menú", href: "/menu" },
     { name: "Sobre Nosotros", href: "/sobre-nosotros" },
+    { name: "Contacto", href: "/contacto" },
   ];
 
   return (
@@ -46,9 +47,9 @@ const Navbar = () => {
             <motion.div
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
-              className="font-bold text-2xl text-orange-500"
+              className="font-bold text-2xl text-orange-600"
             >
-              Zona G<span className="text-orange-600"> Fast Food</span>
+              Sabor<span className="text-orange-500">3D</span>
             </motion.div>
           </Link>
 
@@ -58,7 +59,7 @@ const Navbar = () => {
               <Link
                 key={link.name}
                 href={link.href}
-                className="font-medium text-[#745434] hover:text-[#eb8e23] transition-colors"
+                className="font-medium text-gray-700 hover:text-orange-500 transition-colors"
               >
                 {link.name}
               </Link>
@@ -67,7 +68,7 @@ const Navbar = () => {
               <CartDrawer />
               <Button
                 variant="default"
-                className="bg-[#9b2d1d] hover:bg-[#b3301f] text-white"
+                className="bg-orange-500 hover:bg-orange-600 text-white"
                 asChild
               >
                 <Link href="/orden">
@@ -93,14 +94,14 @@ const Navbar = () => {
                     <Link
                       key={link.name}
                       href={link.href}
-                      className="text-[#745434] text-lg font-medium px-2 py-1 rounded hover:bg-orange-50 hover:text-[#eb8e23] transition-colors"
+                      className="text-lg font-medium px-2 py-1 rounded hover:bg-orange-50 hover:text-orange-500 transition-colors"
                     >
                       {link.name}
                     </Link>
                   ))}
                   <Button
                     variant="default"
-                    className="bg-[#9b2d1d] hover:bg-[#b3301f] text-white mt-4 w-full"
+                    className="bg-orange-500 hover:bg-orange-600 text-white mt-4 w-full"
                     asChild
                   >
                     <Link href="/orden">
